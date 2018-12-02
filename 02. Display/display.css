@@ -1,0 +1,66 @@
+
+.box {
+	width: auto;
+	height: 300px;
+	border: 1px solid #000;
+}
+
+.inline {
+	display: inline;
+	background-color: yellow;
+}
+
+.block {
+	display: block;
+	background-color: green;
+}
+
+.inline-block {
+	display: inline-block;
+	background-color: aqua;
+}
+
+.none {
+	display: none;
+}
+
+.flex {
+	display: flex;
+	flex-direction: row; /* default */
+	/* flex-direction: row-reverse; */
+	/* flex-direction: column;*/
+	/* flex-direction: column-reverse; */
+	background-color: powderblue;
+	height: 200px;
+}
+
+.flex-item {
+	background-color: tomato;
+	/* (1) flex item 1/n length */
+	/* flex-grow: 1; */
+
+	/* (2) flex item minimum length */
+	/* flex-grow: 0; */
+}
+
+.flex-item1 {
+}
+
+.flex-item2 {
+	/* flex item size */
+	flex-basis: 400px;
+
+	/* (1) flex-grow 2/n */
+	/* (2) flex-full length */
+	/* flex-grow: 2; */
+
+
+	/* shrink need 'flex-basis' value */
+	/* not shrink */
+	flex-shrink: 0;
+	/* allow shirnk */
+	/* flex-shrink: 1; */
+}
+
+.flex-item3 {
+}

@@ -1,0 +1,117 @@
+.box {
+	width: 100px;
+	height: 100px;
+}
+
+.parent-box {
+	width: 300px;
+	height: 300px;
+}
+
+.child-box {
+	width: 150px;
+	height: 150px;
+}
+
+.color-red {
+	background-color: red;
+}
+
+.color-yellow {
+	background-color: yellow;
+}
+
+.color-aqua {
+	background-color: aqua;
+}
+
+.color-green {
+	background-color: green;
+}
+
+/* Position Static */
+#static-1 {}
+
+#static-2 {}
+
+#static-3 {}
+
+
+/* Position Relative */
+#relative-1 {
+	position: relative;
+	top: 50px;
+	left: -50px;
+}
+
+#relative-2 {
+	position: relative;
+	top: 50px;
+	left: 50px;
+}
+
+#relative-3 {
+	position: relative;
+	right: -50px;
+	bottom: -50px;
+}
+
+
+/* Position Absolute */
+#parent-static {
+
+}
+#absolute-1 {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+}
+
+#parent-relative {
+	position: relative;
+}
+#absolute-2 {
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+}
+
+#parent-absolute {
+	position: absolute;
+}
+#absolute-3 {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+
+#parent-fixed {
+	position: fixed;
+	top: 0;
+	left: 50%;
+}
+#absolute-4 {
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+}
+
+
+/* Position Fixed */
+#fixed-1 {
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+#fixed-2 {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+#fixed-3 {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+}

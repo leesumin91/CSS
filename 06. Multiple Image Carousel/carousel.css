@@ -1,0 +1,77 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+.slideshow-container {
+  position: absolute;
+  width: 1000px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.control-btn {
+  text-align: right;
+}
+
+.control-btn .prev,
+.control-btn .next {
+  display: inline-block;
+  cursor: pointer;
+  padding: 3px 8px;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: tomato;
+  /* drag constraint*/
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+}
+
+.control-btn .prev:hover,
+.control-btn .next:hover {
+  background-color: orange;
+}
+
+.card-container {
+  text-align: center;
+}
+
+.card-container .card {
+  position: relative;
+  display: none;
+}
+
+.card-container .card img {
+  position: relative;
+  width: 200px;
+  height: 130px;
+}
+
+.card-container .card .text {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

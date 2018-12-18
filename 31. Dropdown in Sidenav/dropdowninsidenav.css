@@ -1,0 +1,50 @@
+body {
+	font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+	height: 100%;
+	width: 200px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #222;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+.sidenav a, .dropdown-btn {
+	padding: 10px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #bbb;
+	display: block;
+	background: none;
+	width: 100%;
+	text-align: left;
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+	color: #f1f1f1;
+}
+
+.main {
+	margin-left: 200px; /* Same as the width of the sidenav */
+	font-size: 20px; /* Increased text to enable scrolling */
+	padding: 0px 10px;
+}
+
+.active {
+  background-color: #3498DB;
+  color: #f1f1f1;
+}
+
+.dropdown-container {
+	display: none;
+	background-color: #262626;
+	padding-left: 8px;
+}
